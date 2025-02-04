@@ -59,3 +59,29 @@ string = input("Users input: ")
 def reverse_slicing(s):
     return s[::-1]
 print('Reverse String using slicing =', reverse_slicing(string))
+
+
+# Bonus Exercises
+#
+# 1. Palindrome Check
+# Write a function that checks whether a given string is a palindrome (reads the same forwards and backwards). Test it with the strings "madam" and "hello".
+def is_palindrome(s):
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+
+
+print(is_palindrome("madam"))  # True
+print(is_palindrome("hello"))  # False
+
+# 2. List to String Conversion
+# Convert the list ['P', 'y', 't', 'h', 'o', 'n'] to a single string "Python". Print the result.
+
+# List of characters
+char_list = ['P', 'y', 't', 'h', 'o', 'n']
+char_list2 = ['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']
+
+# Convert list to string
+result = ''.join(char_list)
+result2 = ''.join(char_list2)
+# Print the result
+print(result + " " + "is" +  " " + "better" + " " + "than" + " " +  result2 )
