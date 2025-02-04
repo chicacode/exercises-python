@@ -8,27 +8,28 @@ print("third element in the list", my_list[2])  # Output: 3
 my_list.append(6)
 print(my_list)
 del my_list[1]
-print(my_list)  # Output: [1, 3, 4, 5, 6]
+print(my_list)
 
 # 3. List Slicing
 numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-print(numbers[:5])  # Output: [10, 20, 30, 40, 50]
-print(numbers[-3:])  # Output: [80, 90, 100]
-print(numbers[::2])  # Output: [10, 30, 50, 70, 90]
-
-
+print(numbers[:5])
+print(numbers[-3:])
+print(numbers[1::2])
 
 # 4. List Operations: Create a list of numbers from 1 to 10
 num_list = list(range(1, 11))
 
-print(sum(num_list))  # Output: 55
+print(sum(num_list))
 
 # Find the maximum and minimum values
-print(max(num_list))  # Output: 10
-print(min(num_list))  # Output: 1
+print(max(num_list))
+print(min(num_list))
 
 # 5. List comprehension to create a list of squares from 1 to 10
-squares = [x**2 for x in range(1, 11)]
+
+# exponent
+# x to the power of two 2 x ** 2
+squares = [x ** 2 for x in range(1, 11)]
 print(squares)
 def squares(start, end):
     return [i**2 for i in range(start, end+1)]

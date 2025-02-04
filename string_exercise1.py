@@ -10,8 +10,8 @@ print("Last character", txt1[-1])
 # Print the substring "Programming".
 
 txt2 = "Python Programming"
-print("Print the substring", txt2[:6])
-print("Print the substring", txt2[7:])
+print("Print the substring", txt2[:6]) # Slicing operator is called this [:6]
+print("Print the substring", txt2[7:]) # [:]
 
 # 3. String Methods
 # Convert the string "hello, world!" to uppercase and print it.
@@ -37,8 +37,7 @@ print(txt4 + " " + txt5)
 #Given the string "apple,banana,cherry", split it by commas and print the resulting list.
 
 strFruits = "apple, banana, cherry"
-newStr = strFruits.replace(",", "")
-listFruits = newStr.split()
+listFruits = strFruits.split(",")
 print(listFruits)
 
 # 6. String Formatting
@@ -60,6 +59,7 @@ def reverse_slicing(s):
     return s[::-1]
 print('Reverse String using slicing =', reverse_slicing(string))
 
+# s[::-1] the colon takes all elemnt in string and then other colon : takes backwards
 
 # Bonus Exercises
 #
@@ -81,6 +81,7 @@ char_list = ['P', 'y', 't', 'h', 'o', 'n']
 char_list2 = ['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']
 
 # Convert list to string
+# joining all the elements using join method with string
 result = ''.join(char_list)
 result2 = ''.join(char_list2)
 # Print the result
