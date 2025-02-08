@@ -3,7 +3,6 @@
 # Instructor Derrick
 # Student Geraldine
 
-
 # Lab 2
 
 """""
