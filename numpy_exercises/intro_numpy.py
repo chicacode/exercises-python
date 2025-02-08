@@ -6,4 +6,4 @@ height = [1.69, 1.70, 1.40, 1.80, 1.50]
 np_weight = np.array(weight)
 np_height = np.array(height)
 
-print('result ', np_weight / np_height ** 2)
+print('RESULT BMI:', np_weight / np_height ** 2)
